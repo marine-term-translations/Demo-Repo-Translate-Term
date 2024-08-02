@@ -8,17 +8,19 @@ import Translate from './components/Translate';
 import Update from './components/Update';
 import Changed from './components/Changed';
 
+const repoPath = process.env.REACT_APP_REPO || '';
+
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/callback" element={<Callback />} />
-        <Route path="/collection" element={<Collection />} />
-        <Route path="/display" element={<Display />} />
-        <Route path="/translate" element={<Translate />} />
-        <Route path="/update" element={<Update />} />
-        <Route path="/changed" element={<Changed />} />
+        <Route path={`/${repoPath}/`} element={<Login />} />
+        <Route path={`/${repoPath}/callback`} element={<Callback />} />
+        <Route path={`/${repoPath}/collection`} element={<Collection />} />
+        <Route path={`/${repoPath}/display`} element={<Display />} />
+        <Route path={`/${repoPath}/translate`} element={<Translate />} />
+        <Route path={`/${repoPath}/update`} element={<Update />} />
+        <Route path={`/${repoPath}/changed`} element={<Changed />} />
       </Routes>
     </Router>
   );
