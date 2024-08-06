@@ -6,6 +6,7 @@ import { formatInTimeZone } from 'date-fns-tz';
 const Changed = () => {
     const [diffs, setDiffs] = useState([]);
     const [comments, setComments] = useState([]);
+    const [pullnumber, setPullnumber] = useState([]);
     const [loading, setLoading] = useState(true);
     const [uptodate, setUptodate] = useState(false);
 
@@ -28,10 +29,11 @@ const Changed = () => {
                     setUptodate(true)
                 }
 
-                const { diffsData, commentsData } = response.data;
+                const { diffsData, commentsData, pullnumber } = response.data;
 
                 setDiffs(diffsData);
                 setComments(commentsData);
+                setPullnumber(pullnumber);
                 setLoading(false);
             } catch (error) {
                 console.error('Erreur lors de la récupération des fichiers de la pull request:', error);
@@ -58,6 +60,7 @@ const Changed = () => {
 
     return (
         <div>
+            <h2><a href={`/merge?pullnumber=${pullnumber}`}>Merge pull request</a></h2>
             {diffs.map((fileDiff, index) => (
                 <div key={index}>
                     <h3>{fileDiff.filename}</h3>

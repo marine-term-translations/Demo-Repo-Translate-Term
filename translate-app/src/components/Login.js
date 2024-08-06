@@ -8,9 +8,10 @@ const Login = () => {
       navigate('/collection');
     }
   }, [navigate]);
-  const REDIRECT_URI = `${process.env.REACT_APP_FRONT_URL}/callback`;
+  // const REDIRECT_URI = `${process.env.REACT_APP_FRONT_URL}/callback`;
   // console.log(REDIRECT_URI)
-  const AUTH_URL = `https://github.com/login/oauth/authorize?client_id=${process.env.REACT_APP_CLIENT_ID}&redirect_uri=${REDIRECT_URI}`;
+  // const AUTH_URL = `https://github.com/login/oauth/authorize?client_id=${process.env.REACT_APP_CLIENT_ID}&redirect_uri=${REDIRECT_URI}`;
+  const AUTH_URL = `https://github.com/login/oauth/authorize?client_id=${process.env.REACT_APP_CLIENT_ID}`;
 
   return (
     <div>
