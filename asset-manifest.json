@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Marine_Translate_Therm/static/css/main.ccbb3de3.css",
-    "main.js": "/Marine_Translate_Therm/static/js/main.646ae4c6.js",
+    "main.js": "/Marine_Translate_Therm/static/js/main.02abf39b.js",
     "static/js/453.1636ae31.chunk.js": "/Marine_Translate_Therm/static/js/453.1636ae31.chunk.js",
     "index.html": "/Marine_Translate_Therm/index.html",
     "main.ccbb3de3.css.map": "/Marine_Translate_Therm/static/css/main.ccbb3de3.css.map",
-    "main.646ae4c6.js.map": "/Marine_Translate_Therm/static/js/main.646ae4c6.js.map",
+    "main.02abf39b.js.map": "/Marine_Translate_Therm/static/js/main.02abf39b.js.map",
     "453.1636ae31.chunk.js.map": "/Marine_Translate_Therm/static/js/453.1636ae31.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ccbb3de3.css",
-    "static/js/main.646ae4c6.js"
+    "static/js/main.02abf39b.js"
   ]
 }
