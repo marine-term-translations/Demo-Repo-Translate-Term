@@ -9,13 +9,16 @@ const Callback = () => {
   useEffect(() => {
     const fetchToken = async () => {
       const params = new URLSearchParams(window.location.search);
+      console.log(params);
       const code = params.get('code');
-      console.log("callback 2")
+      console.log(code);
       try {
+        console.log("callback 2");
         const response = await axios.post(`${process.env.REACT_APP_BACK_URL}/api/github/token`, {
           code: code,
         });
         console.log("callback3")
+        console.log(response)
         const { access_token } = response.data;
         sessionStorage.setItem('github_token', access_token);
         console.log(access_token)
@@ -28,7 +31,7 @@ const Callback = () => {
     fetchToken();
   }, [navigate]);
 
-  return <div>Chargement...</div>;
+  return <div>oui Chargement...</div>;
 };
 
 export default Callback;
