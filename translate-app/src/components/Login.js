@@ -15,8 +15,8 @@ const Login = () => {
 
   return (
     <div>
-      <h1>Se connecter avec GitHuuuub</h1>
-      <a href={AUTH_URL}>Se connecter</a>
+      <h1>Login with GitHub</h1>
+      <a href={AUTH_URL}>Login</a>
     </div>
   );
 };

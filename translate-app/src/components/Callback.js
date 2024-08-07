@@ -31,7 +31,7 @@ const Callback = () => {
     fetchToken();
   }, [navigate]);
 
-  return <div>oui Chargement...</div>;
+  return <div>Loading...</div>;
 };
 
 export default Callback;

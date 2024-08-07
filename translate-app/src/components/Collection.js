@@ -24,7 +24,7 @@ const Collection = () => {
         setContent(content);
         setLoading(false);
       } catch (error) {
-        console.error('Erreur lors de l\'obtention du contenu:', error);
+        console.error('Error while loading config.yml', error);
         setLoading(false);
       }
     };
@@ -33,16 +33,16 @@ const Collection = () => {
   }, [navigate]);
 
   if (loading) {
-    return <div>Chargement...</div>;
+    return <div>Loading...</div>;
   }
 
   if (!content) {
-    return <div>Erreur lors du chargement du contenu.</div>;
+    return <div>Error while loading config.yml.</div>;
   }
 
   return (
     <div>
-      <form action="/display" method="get">
+      <form action="#/display" method="get">
         <label htmlFor="collection">Select the collection :</label>
         <select id="collection" name="collection" required>
           {content.sources.map((source) => (
@@ -55,7 +55,7 @@ const Collection = () => {
             <option key={language} value={language}>{language}</option>
           ))}
         </select><br />
-        <button type="submit">Afficher</button>
+        <button type="submit">Display</button>
       </form>
     </div>
   );
