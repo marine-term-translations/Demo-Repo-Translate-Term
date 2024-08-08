@@ -1,17 +1,17 @@
-
-uri: "http://vocab.nerc.ac.uk/collection/P02/current/ZZZZ/2/"
+uri: http://vocab.nerc.ac.uk/collection/P02/current/ZZZZ/2/
 labels:
-  - name: "altLabel"
-    path: "http://www.w3.org/2004/02/skos/core#altLabel"
-    original: "Unspec"
+  - name: altLabel
+    path: http://www.w3.org/2004/02/skos/core#altLabel
+    original: Unspec
     translations:
-      - fr: ""
+      - fr: abbb
       - es: ""
       - de: ""
       - it: ""
-  - name: "definition"
-    path: "http://www.w3.org/2004/02/skos/core#definition"
-    original: "The identity of the parameter is not declared.  Covers cases such as internal working parameters and dummy channels."
+  - name: definition
+    path: http://www.w3.org/2004/02/skos/core#definition
+    original: The identity of the parameter is not declared.  Covers cases such as
+      internal working parameters and dummy channels.
     translations:
       - fr: ""
       - es: ""
