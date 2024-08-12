@@ -4,6 +4,9 @@ import { useNavigate } from 'react-router-dom';
 
 const Update = () => {
     const navigate = useNavigate();
+    if (!sessionStorage.getItem("github_token")) {
+        navigate('/');
+    }
 
     useEffect(() => {
         const updateTranslations = async () => {

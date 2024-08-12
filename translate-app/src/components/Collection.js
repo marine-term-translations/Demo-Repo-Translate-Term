@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { parse } from "yaml";
 
 const Collection = () => {
+  // console.log("collection");
   const [content, setContent] = useState(null);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
@@ -13,6 +14,9 @@ const Collection = () => {
       navigate('/');
     }
     const fetchToken = async () => {
+      // console.log(`url : ${process.env.REACT_APP_BACK_URL}`);
+      // console.log(`github_token : ${sessionStorage.getItem("github_token")}`);
+      // console.log(`repo : ${process.env.REACT_APP_REPO}`);
       try {
         const response = await axios.post(`${process.env.REACT_APP_BACK_URL}/api/github/content`, {
             token: sessionStorage.getItem("github_token"),
@@ -20,7 +24,7 @@ const Collection = () => {
             repo: process.env.REACT_APP_REPO,
           });
         const content = parse(response.data);
-        console.log(content);
+        // console.log(content);
         setContent(content);
         setLoading(false);
       } catch (error) {

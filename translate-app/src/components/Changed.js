@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import DiffViewer from 'react-diff-viewer-continued';
+import DiffViewer, { DiffMethod } from 'react-diff-viewer-continued';
 import { formatInTimeZone } from 'date-fns-tz';
+import { useNavigate } from 'react-router-dom';
 
 const Changed = () => {
     const [diffs, setDiffs] = useState([]);
@@ -9,24 +10,24 @@ const Changed = () => {
     const [pullnumber, setPullnumber] = useState([]);
     const [loading, setLoading] = useState(true);
     const [uptodate, setUptodate] = useState(false);
+    const [showCommentForm, setShowCommentForm] = useState(false);
+    const [selectedLine, setSelectedLine] = useState(null);
+    const [selectedFile, setSelectedFile] = useState(null); // Nouvel état pour le fichier sélectionné
+    const navigate = useNavigate();
 
     useEffect(() => {
+        if (!sessionStorage.getItem("github_token")) {
+            navigate('/');
+        }
         const fetchData = async () => {
             try {
-                const params = new URLSearchParams(window.location.search);
-                const translations = {};
-
-                params.forEach((value, key) => {
-                    translations[key] = decodeURIComponent(value);
-                });
-
                 const response = await axios.post(`${process.env.REACT_APP_BACK_URL}/api/github/changed`, {
                     token: sessionStorage.getItem("github_token"),
                     repo: process.env.REACT_APP_REPO,
                 });
-                console.log(response);
-                if(response.data.compare){
-                    setUptodate(true)
+
+                if (response.data.compare) {
+                    setUptodate(true);
                 }
 
                 const { diffsData, commentsData, pullnumber } = response.data;
@@ -53,14 +54,19 @@ const Changed = () => {
 
     const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
-    const handleLineNumberClick = (lineId) => {
-        console.log(`Numéro de ligne cliqué : ${lineId}`);
-        // Ajoutez ici la logique supplémentaire que vous souhaitez exécuter lors du clic sur un numéro de ligne
+    const handleLineNumberClick = (lineId, event, filename) => {
+        setSelectedLine(lineId);
+        setSelectedFile(filename);
+        setShowCommentForm(true);
     };
 
     return (
         <div>
-            <h2><a href={`/merge?pullnumber=${pullnumber}`}>Merge pull request</a></h2>
+            <h2>
+                <a href={`/${process.env.REACT_APP_REPO}/?pullnumber=${pullnumber}#/merge`}>
+                    Merge pull request {pullnumber}
+                </a>
+            </h2>
             {diffs.map((fileDiff, index) => (
                 <div key={index}>
                     <h3>{fileDiff.filename}</h3>
@@ -69,7 +75,7 @@ const Changed = () => {
                         newValue={fileDiff.after}
                         splitView={false}
                         showDiffOnly={true}
-                        onLineNumberClick={handleLineNumberClick}
+                        onLineNumberClick={(lineId, event) => handleLineNumberClick(lineId, event, fileDiff.filename)}
                     />
                     {comments
                         .filter(comment => comment.path === fileDiff.filename)
@@ -78,13 +84,26 @@ const Changed = () => {
 
                             return (
                                 <div key={commentIndex}>
-                                    <strong>Commentaire sur la ligne {comment.line} à {formattedDate} : </strong>{comment.body}
+                                    <strong>Comment on line {comment.line} at {formattedDate}: </strong>{comment.body}
                                     <p></p>
                                 </div>
                             );
-                        })}
+                        })
+                    }
                 </div>
             ))}
+            {showCommentForm && (
+                <div className="comment-form-overlay">
+                    <div className="comment-form-popup">
+                        <h3>Add a comment for line {selectedLine} in file {selectedFile}</h3>
+                        <textarea placeholder="Enter your comment"></textarea>
+                        <div>
+                            <button onClick={() => setShowCommentForm(false)}>Cancel</button>
+                            <button>Submit</button>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

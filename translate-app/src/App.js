@@ -1,6 +1,6 @@
 // App.js
 import React from 'react';
-import { Routes, Route, HashRouter, Link } from 'react-router-dom';
+import { Routes, Route, HashRouter, Link} from 'react-router-dom';
 import Login from './components/Login';
 import Callback from './components/Callback';
 import Collection from './components/Collection';
@@ -14,7 +14,11 @@ import Merge from './components/Merge';
 
 const App = () => {
   return (
-    <HashRouter>
+    <HashRouter >
+      <ul>
+        <li><Link to="/collection">Collection</Link></li>
+        <li><Link to="/changed">Changed</Link></li>
+      </ul>
       <Routes>
         <Route exact path={`/callback`} element={<Callback />} />
         <Route exact path={`/collection`} element={<Collection />} />

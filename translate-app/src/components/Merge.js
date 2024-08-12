@@ -4,20 +4,23 @@ import { useNavigate } from 'react-router-dom';
 
 const Merge = () => {
   const navigate = useNavigate();
-  console.log("callback")
+  console.log("merge")
+  if (!sessionStorage.getItem("github_token")) {
+    navigate('/');
+  }
 
   useEffect(() => {
     const fetchToken = async () => {
       const params = new URLSearchParams(window.location.search);
       const pullnumber = params.get('pullnumber');
-      console.log(pullnumber)
+      // console.log(pullnumber)
       try {
         const response = await axios.post(`${process.env.REACT_APP_BACK_URL}/api/github/pull`, {
           token: sessionStorage.getItem("github_token"),
           repo: process.env.REACT_APP_REPO,
           pullnumber,
         });
-        console.log(response.data)
+        // console.log(response.data)
         navigate('/changed');
       } catch (error) {
         console.error('Erreur lors du merge :', error);
@@ -27,7 +30,7 @@ const Merge = () => {
     fetchToken();
   }, [navigate]);
 
-  return <div>Chargement...</div>;
+  return <div>Loading...</div>;
 };
 
 export default Merge;

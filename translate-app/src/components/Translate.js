@@ -12,22 +12,22 @@ const Translate = () => {
     const [translations, setTranslations] = useState({});
 
     useEffect(() => {
+        // console.log(sessionStorage.getItem("github_token"));
         if (!sessionStorage.getItem("github_token")) {
             navigate('/');
         }
         const fetchToken = async () => {
             const params = new URLSearchParams(window.location.search);
             const path = params.get('path');
+            // console.log(path);
             if (!(path)) {
                 navigate('/collection');
             }
             sessionStorage.setItem("path", path);
-            const languageselect = params.get('languageselect');
-            if (languageselect) {
-                sessionStorage.setItem("language", languageselect);
-            }
-            
-            
+            // const languageselect = params.get('languageselect');
+            // if (languageselect) {
+            //     sessionStorage.setItem("language", languageselect);
+            // }
             try {
                 const response = await axios.post(`${process.env.REACT_APP_BACK_URL}/api/github/content`, {
                     token: sessionStorage.getItem("github_token"),
@@ -38,12 +38,11 @@ const Translate = () => {
                 // console.log(content);
                 setContent(content);
                 setLoading(false);
-              } catch (error) {
+            } catch (error) {
                 console.error('Erreur lors de l\'obtention du contenu:', error);
                 setLoading(false);
-              }
+            }
         };
-
         fetchToken();
     }, [navigate]);
 
@@ -75,8 +74,8 @@ const Translate = () => {
     return (
         <div>
             <h1>Contenu du fichier</h1>
-            <h2><a href={`/display`}>Go Back</a></h2>
-            <form method="GET" action={`/update`}>
+            <h2><a href={`#/display`}>Go Back</a></h2>
+            <form method="GET" action={`#/update`}>
                 <ul>
                     {content.labels.length > 0 ? (
                         content.labels.map(label => {
