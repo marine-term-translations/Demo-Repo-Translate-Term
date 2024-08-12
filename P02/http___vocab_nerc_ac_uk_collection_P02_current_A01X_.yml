@@ -4,7 +4,7 @@ labels:
     path: http://www.w3.org/2004/02/skos/core#altLabel
     original: WC_SedFluxAlkeno
     translations:
-      - fr: lala
+      - fr: l
       - es: ""
       - de: ""
       - it: ""
@@ -14,7 +14,7 @@ labels:
       ketones) and alkenoates (carboxylic acid esters) sinking as particles
       through any body of water.
     translations:
-      - fr: ""
+      - fr: a
       - es: ""
       - de: ""
       - it: ""
