@@ -1,4 +1,3 @@
-
 uri: "http://vocab.nerc.ac.uk/collection/P02/current/AATX/2/"
 labels:
   - name: "altLabel"
@@ -13,7 +12,7 @@ labels:
     path: "http://www.w3.org/2004/02/skos/core#definition"
     original: "Any parameterisation of cell surface area of free-floating autotrophic biological entities designated by taxonomic names (e.g. species, genus, family) in any body of fresh or salt water."
     translations:
-      - fr: ""
+      - fr: "Toute paramétrisation de la surface cellulaire des entités biologiques autotrophes flottantes libres désignées par des noms taxonomiques (par exemple espèces, genre, famille) dans n'importe quel corps d'eau douce ou salée."
       - es: ""
       - de: ""
       - it: ""
