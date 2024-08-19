@@ -1,4 +1,3 @@
-
 uri: "http://vocab.nerc.ac.uk/collection/P02/current/A999/2/"
 labels:
   - name: "altLabel"
@@ -14,6 +13,6 @@ labels:
     original: "Microzooplankton surface area per unit volume of the water column parameters presented at the level of taxa that may be mapped to entities in a standard taxonomy registry such as WoRMS or ITIS.  These may be at any taxonomic level from sub-species upwards."
     translations:
       - fr: ""
-      - es: ""
+      - es: "Microzooplancton superficie por unidad de volumen de los parámetros de la columna de agua presentados a nivel de taxones que pueden ser mapeados a entidades en un registro de taxonomía estándar como WoRMS o ITIS. Estos pueden estar en cualquier nivel taxonómico desde subespecies en adelante."
       - de: ""
       - it: ""
