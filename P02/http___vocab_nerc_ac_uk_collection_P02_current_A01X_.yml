@@ -4,9 +4,9 @@ labels:
     path: http://www.w3.org/2004/02/skos/core#altLabel
     original: WC_SedFluxAlkeno
     translations:
-      - fr: laaa
+      - fr: ""
       - es: ""
-      - de: zz
+      - de: ""
       - it: ""
   - name: definition
     path: http://www.w3.org/2004/02/skos/core#definition
@@ -19,5 +19,5 @@ labels:
           carboxyliques) sous forme de particules dans n'importe quel plan
           d'eau.
       - es: ""
-      - de: kkk
+      - de: ""
       - it: ""
