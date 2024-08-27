@@ -6,7 +6,7 @@ labels:
     translations:
       - fr: laaa
       - es: ""
-      - de: ""
+      - de: zz
       - it: ""
   - name: definition
     path: http://www.w3.org/2004/02/skos/core#definition
@@ -19,5 +19,5 @@ labels:
           carboxyliques) sous forme de particules dans n'importe quel plan
           d'eau.
       - es: ""
-      - de: ""
+      - de: kkk
       - it: ""
