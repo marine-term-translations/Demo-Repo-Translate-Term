@@ -4,7 +4,7 @@ labels:
     path: "http://www.w3.org/2004/02/skos/core#altLabel"
     original: "WC_SedFluxAlkeno"
     translations:
-      - fr: "l"
+      - fr: "WC_SedFluxAlkeno"
       - es: " aaaa"
       - de: ""
       - it: ""
@@ -12,7 +12,7 @@ labels:
     path: "http://www.w3.org/2004/02/skos/core#definition"
     original: "Parameters quantifying the rate of alkenones (unsaturated aliphatic ketones) and alkenoates (carboxylic acid esters) sinking as particles through any body of water."
     translations:
-      - fr: "Some changes here that don't add up to the job 1 branch"
+      - fr: "Surface du microzooplancton par unité de volume des paramètres de la colonne d’eau présentés au niveau des taxons qui peuvent être cartographiés aux entités dans un registre taxonomique standard tel que WoRMS ou ITIS. Ces derniers peuvent être à n’importe quel niveau taxonomique, depuis les sous-espèces en haut."
       - es: ""
       - de: "test"
       - it: ""
