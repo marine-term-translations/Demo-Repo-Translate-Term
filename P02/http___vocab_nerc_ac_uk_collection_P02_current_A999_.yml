@@ -12,7 +12,7 @@ labels:
     path: "http://www.w3.org/2004/02/skos/core#definition"
     original: "Microzooplankton surface area per unit volume of the water column parameters presented at the level of taxa that may be mapped to entities in a standard taxonomy registry such as WoRMS or ITIS.  These may be at any taxonomic level from sub-species upwards."
     translations:
-      - fr: "Surface du microzooplancton par unité de volume des paramètres de la colonne d’eau présentés au niveau des taxons qui peuvent être cartographiés aux entités dans un registre taxonomique standard tel que WoRMS ou ITIS. Ces derniers peuvent être à n’importe quel niveau taxonomique, depuis les sous-espèces en haut.."
+      - fr: "Surface du microzooplancton par unité de volume des paramètres de la colonne d’eau présentés au niveau des taxons qui peuvent être cartographiés aux entités dans un registre taxonomique standard tel que WoRMS ou ITIS. Ces derniers peuvent être à n’importe quel niveau taxonomique, depuis les sous-espèces en haut."
       - es: "Microzooplancton superficie por unidad de volumen de los parámetros de la columna de agua presentados a nivel de taxones que pueden ser mapeados a entidades en un registro de taxonomía estándar como WoRMS o ITIS. Estos pueden estar en cualquier nivel taxonómico desde subespecies en adelante."
       - de: ""
       - it: ""
