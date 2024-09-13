@@ -12,7 +12,7 @@ labels:
     path: "http://www.w3.org/2004/02/skos/core#definition"
     original: "Parameters quantifying the rate of alkenones (unsaturated aliphatic ketones) and alkenoates (carboxylic acid esters) sinking as particles through any body of water."
     translations:
-      - fr: "Paramètres quantifiant le taux d’alcétones (cétones aliphatiques insaturées) et d’alcénoates (esters d’acides carboxyliques) coulant sous forme de particules dans n’importe quel plan d’eau."
+      - fr: "Paramètres quantifiant le taux d’alcétones (cétones  aliphatiques insaturées) et d’alcénoates (esters d’acides carboxyliques) coulant sous forme de particules dans n’importe quel plan d’eau."
       - es: ""
       - de: "test"
       - it: ""
