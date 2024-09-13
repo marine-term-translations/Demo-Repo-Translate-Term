@@ -4,7 +4,7 @@ labels:
     path: "http://www.w3.org/2004/02/skos/core#altLabel"
     original: "Atm_Nspecies"
     translations:
-      - fr: "Atm_Nspecies"
+      - fr: "Atm_Nspecies "
       - es: ""
       - de: ""
       - it: "Some changes here that don't add up to the job 1 branch"
