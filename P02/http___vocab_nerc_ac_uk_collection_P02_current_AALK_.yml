@@ -12,7 +12,7 @@ labels:
     path: "http://www.w3.org/2004/02/skos/core#definition"
     original: "Alkane concentrations in all phases of the atmosphere"
     translations:
-      - fr: ""
+      - fr: "ba"
       - es: "a"
       - de: "a"
       - it: "a"
