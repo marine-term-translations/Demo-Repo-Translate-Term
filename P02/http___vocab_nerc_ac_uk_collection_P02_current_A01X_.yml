@@ -4,7 +4,7 @@ labels:
     path: "http://www.w3.org/2004/02/skos/core#altLabel"
     original: "WC_SedFluxAlkeno"
     translations:
-      - fr: "testmerge3"
+      - fr: "WC_SedFluxAlkeno"
       - es: ""
       - de: ""
       - it: "b"
@@ -12,7 +12,7 @@ labels:
     path: "http://www.w3.org/2004/02/skos/core#definition"
     original: "Parameters quantifying the rate of alkenones (unsaturated aliphatic ketones) and alkenoates (carboxylic acid esters) sinking as particles through any body of water."
     translations:
-      - fr: "Some changes here that don't add up to the job 1 branch"
+      - fr: "Paramètres quantifiant le niveau d’alcétones (cétones aliphatiques insaturées) et d’alkénoates (esters d’acides carboxyliques) circulant sous forme de particules dans n’importe quel plan d’eau."
       - es: "a"
       - de: "a"
       - it: "ba"
