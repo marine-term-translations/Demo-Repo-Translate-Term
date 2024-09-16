@@ -1,20 +1,18 @@
-uri: http://vocab.nerc.ac.uk/collection/P02/current/A01X/2/
+uri: "http://vocab.nerc.ac.uk/collection/P02/current/A01X/2/"
 labels:
-  - name: altLabel
-    path: http://www.w3.org/2004/02/skos/core#altLabel
-    original: WC_SedFluxAlkeno
+  - name: "altLabel"
+    path: "http://www.w3.org/2004/02/skos/core#altLabel"
+    original: "WC_SedFluxAlkeno"
     translations:
-      - fr: l
-      - es: ""
+      - fr: "l"
+      - es: " aaaa"
       - de: ""
       - it: ""
-  - name: definition
-    path: http://www.w3.org/2004/02/skos/core#definition
-    original: Parameters quantifying the rate of alkenones (unsaturated aliphatic
-      ketones) and alkenoates (carboxylic acid esters) sinking as particles
-      through any body of water.
+  - name: "definition"
+    path: "http://www.w3.org/2004/02/skos/core#definition"
+    original: "Parameters quantifying the rate of alkenones (unsaturated aliphatic ketones) and alkenoates (carboxylic acid esters) sinking as particles through any body of water."
     translations:
-      - fr: a
+      - fr: "Some changes here that don't add up to the job 1 branch"
       - es: ""
-      - de: ""
+      - de: "test"
       - it: ""

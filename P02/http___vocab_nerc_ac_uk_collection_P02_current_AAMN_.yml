@@ -1,14 +1,13 @@
-
 uri: "http://vocab.nerc.ac.uk/collection/P02/current/AAMN/1/"
 labels:
   - name: "altLabel"
     path: "http://www.w3.org/2004/02/skos/core#altLabel"
     original: "Atm_Nspecies"
     translations:
-      - fr: ""
+      - fr: "Atm_Nspecies "
       - es: ""
       - de: ""
-      - it: ""
+      - it: "Some changes here that don't add up to the job 1 branch"
   - name: "definition"
     path: "http://www.w3.org/2004/02/skos/core#definition"
     original: "Concentrations of both organic (eg amines) and inorganic (eg ammonia and oxides of nitrogen) nitrogen species in all phases of the atmosphere"
