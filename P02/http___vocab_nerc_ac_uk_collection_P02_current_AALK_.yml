@@ -1,19 +1,18 @@
-
 uri: "http://vocab.nerc.ac.uk/collection/P02/current/AALK/1/"
 labels:
   - name: "altLabel"
     path: "http://www.w3.org/2004/02/skos/core#altLabel"
     original: "At_Alkane"
     translations:
-      - fr: ""
-      - es: ""
-      - de: ""
-      - it: ""
+      - fr: "testmerge2"
+      - es: "a"
+      - de: "a"
+      - it: "a"
   - name: "definition"
     path: "http://www.w3.org/2004/02/skos/core#definition"
     original: "Alkane concentrations in all phases of the atmosphere"
     translations:
-      - fr: ""
-      - es: ""
-      - de: ""
-      - it: ""
+      - fr: "ba"
+      - es: "a"
+      - de: "a"
+      - it: "a"
