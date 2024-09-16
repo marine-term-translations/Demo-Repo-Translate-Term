@@ -5,7 +5,7 @@ labels:
     path: "http://www.w3.org/2004/02/skos/core#altLabel"
     original: "At_Alkane"
     translations:
-      - fr: ""
+      - fr: "testmerge2"
       - es: ""
       - de: ""
       - it: ""
