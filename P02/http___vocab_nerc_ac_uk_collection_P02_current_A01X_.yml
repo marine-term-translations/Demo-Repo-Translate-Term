@@ -6,7 +6,7 @@ labels:
     translations:
       - fr: "WC_SedFluxAlkeno"
       - es: "a"
-      - de: "aa"
+      - de: "a"
       - it: "E"
   - name: "definition"
     path: "http://www.w3.org/2004/02/skos/core#definition"
