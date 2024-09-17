@@ -4,9 +4,9 @@ labels:
     path: "http://www.w3.org/2004/02/skos/core#altLabel"
     original: "WC_SedFluxAlkeno"
     translations:
-      - fr: "WC_SedFluxAlkeno"
+      - fr: ""
       - es: "a"
-      - de: "a"
+      - de: "aa"
       - it: "E"
   - name: "definition"
     path: "http://www.w3.org/2004/02/skos/core#definition"
