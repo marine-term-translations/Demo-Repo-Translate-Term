@@ -7,7 +7,7 @@ labels:
       - fr: "testmergeC3P0O"
       - es: ""
       - de: ""
-      - it: ""
+      - it: "a"
   - name: "definition"
     path: "http://www.w3.org/2004/02/skos/core#definition"
     original: "Parameters quantifying the rate of alkenones (unsaturated aliphatic ketones) and alkenoates (carboxylic acid esters) sinking as particles through any body of water."
