@@ -6,7 +6,7 @@ labels:
     translations:
       - fr: "testmergeC3P0O"
       - es: ""
-      - de: ""
+      - de: "a"
       - it: "a"
   - name: "definition"
     path: "http://www.w3.org/2004/02/skos/core#definition"
