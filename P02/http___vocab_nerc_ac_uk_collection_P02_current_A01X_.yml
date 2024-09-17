@@ -5,7 +5,7 @@ labels:
     original: "WC_SedFluxAlkeno"
     translations:
       - fr: "WC_SedFluxAlkeno"
-      - es: "a"
+      - es: "aa"
       - de: "a"
       - it: "E"
   - name: "definition"
