@@ -4,7 +4,7 @@ labels:
     path: "http://www.w3.org/2004/02/skos/core#altLabel"
     original: "WC_SedFluxAlkeno"
     translations:
-      - fr: "l"
+      - fr: ""
       - es: "a"
       - de: "a"
       - it: "a"
