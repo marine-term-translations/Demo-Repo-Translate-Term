@@ -5,7 +5,7 @@ labels:
     original: "WC_SedFluxAlkeno"
     translations:
       - fr: "testmergeC3P0O"
-      - es: ""
+      - es: "a"
       - de: "a"
       - it: "a"
   - name: "definition"
@@ -13,6 +13,6 @@ labels:
     original: "Parameters quantifying the rate of alkenones (unsaturated aliphatic ketones) and alkenoates (carboxylic acid esters) sinking as particles through any body of water."
     translations:
       - fr: "Some changes here that don't add up to the job"
-      - es: ""
+      - es: "a"
       - de: "a"
       - it: "ba"
