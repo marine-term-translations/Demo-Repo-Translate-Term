@@ -12,7 +12,7 @@ labels:
     path: "http://www.w3.org/2004/02/skos/core#definition"
     original: "Concentrations of both organic (eg amines) and inorganic (eg ammonia and oxides of nitrogen) nitrogen species in all phases of the atmosphere"
     translations:
-      - fr: ""
+      - fr: "a"
       - es: ""
       - de: ""
       - it: ""
