@@ -5,7 +5,7 @@ labels:
     original: "WC_TaxMicrozooSurfArea"
     translations:
       - fr: "WC_TaxMicrozooSurfArea  "
-      - es: "blabla"
+      - es: "WC_TaxMicrozooSurfArea"
       - de: "a"
       - it: "a"
   - name: "definition"
